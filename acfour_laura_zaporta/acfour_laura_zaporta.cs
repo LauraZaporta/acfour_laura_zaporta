@@ -1,40 +1,11 @@
 ﻿//PRE: The values given by the user will be numbers
+using System;
+using acfour_library;
 
 namespace acfour
 {
     public class code_acfour
     {
-        public static void PrintArray(int[] array)
-        {
-            foreach(int num in array)
-            {
-                Console.Write($"{num} ");
-            }
-        }
-
-        public static void QuickValuesChange(ref int numA, ref int numB)
-        {
-            int aux;
-            aux = numA;
-            numA = numB;
-            numB = aux;
-        }
-
-        public static void AscOrderArray(int[] array)
-        {
-            for (int i = 0; i < array.Length - 1; i++)
-            {
-                for (int j = i + 1; j < array.Length; j++)
-                {
-                    if (array[i] < array[j])
-
-                    {
-                        QuickValuesChange(ref array[i], ref array[j]);
-                    }
-                }
-            }
-        }
-
         public static void Main()
         {
             const string AskLengthArray = "How many numbers do You want to type? ";
@@ -84,8 +55,8 @@ namespace acfour
                 count++;
             }
             Console.Write(ShowingNumbers);
-            AscOrderArray(arrayNums);
-            PrintArray(arrayNums);
+            Acfour.DescOrderArray(arrayNums);
+            Acfour.PrintArray(arrayNums);
             }
             
     }

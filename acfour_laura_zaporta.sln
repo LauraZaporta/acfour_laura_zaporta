@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acfour_laura_zaporta", "acfour_laura_zaporta\acfour_laura_zaporta.csproj", "{D8D01811-90F5-4443-A541-20B196A081C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acfour_library", "acfour_library\acfour_library.csproj", "{42DF2ED4-5188-4100-AEA5-E8135CCCA281}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D8D01811-90F5-4443-A541-20B196A081C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D01811-90F5-4443-A541-20B196A081C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D01811-90F5-4443-A541-20B196A081C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DF2ED4-5188-4100-AEA5-E8135CCCA281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DF2ED4-5188-4100-AEA5-E8135CCCA281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DF2ED4-5188-4100-AEA5-E8135CCCA281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DF2ED4-5188-4100-AEA5-E8135CCCA281}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
