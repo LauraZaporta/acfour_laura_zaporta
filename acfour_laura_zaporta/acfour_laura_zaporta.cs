@@ -12,6 +12,29 @@ namespace acfour
             }
         }
 
+        public static void QuickValuesChange(ref int numA, ref int numB)
+        {
+            int aux;
+            aux = numA;
+            numA = numB;
+            numB = aux;
+        }
+
+        public static void AscOrderArray(int[] array)
+        {
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    if (array[i] < array[j])
+
+                    {
+                        QuickValuesChange(ref array[i], ref array[j]);
+                    }
+                }
+            }
+        }
+
         public static void Main()
         {
             const string AskLengthArray = "How many numbers do You want to type? ";
@@ -60,11 +83,12 @@ namespace acfour
                 arrayNums[count] = numInput;
                 count++;
             }
-            Console.Write(ShowingNumbers); 
+            Console.Write(ShowingNumbers);
+            AscOrderArray(arrayNums);
             PrintArray(arrayNums);
             }
             
     }
 }
 
-//POST: The program will return all the numbers that the User put in the program
+//POST: The program will return all the numbers that the User put in the program ordered in a descending way
